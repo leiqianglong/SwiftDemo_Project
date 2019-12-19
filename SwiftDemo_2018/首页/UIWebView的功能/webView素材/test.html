@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>测试网页</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            
+        <script type="text/javascript">
+            function openAlbum()
+            {
+                // 打开相册(执行OC中的某段代码)
+                window.location.href = 'ios://openMyAlbum';
+            }
+        
+            function openCamera()
+            {
+                // 打开相册(执行OC中的某段代码)
+                window.location.href = 'ios://openMyCamera';
+            }
+        </script>
+    </head>
+    
+    
+    
+    <body>
+        <br><br>
+        <input type="button"class="mybtn1" value="拍照" onclick="openCamera();"> <br>
+        <input type="button"class="mybtn2" value="打开相册" onclick="openAlbum();"> <br>
+    </body>
+    
+    <style>
+        .mybtn1{
+            margin-left:50px;
+            width:100px;
+            height:50px;
+            font-size:20px;
+            background-color:green;
+        }
+        .mybtn2{
+            margin-left:50px;
+            margin-top:20px;
+            width:150px;
+            height:50px;
+            font-size:20px;
+            background-color:green;
+        }
+    
+</html>

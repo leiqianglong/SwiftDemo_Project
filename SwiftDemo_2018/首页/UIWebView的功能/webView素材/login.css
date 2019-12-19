@@ -1,0 +1,67 @@
+body{
+    background-color: #f2f2f2;
+}
+.content{
+    margin-top: 100px;
+}
+.content .pannel{
+    background-color: white;
+    text-align: center;
+    width: 302px;
+    margin: 0px auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.content .pannel .group{
+    margin-bottom: 20px;
+    display: inline-block;
+    text-align: left;
+}
+.content .pannel .group label {
+   line-height: 30px;
+    font-size: 16px;
+    display: block;
+}
+.content .pannel .group input{
+    display: block;
+    width: 250px;
+    height: 30px;
+    border: 1px solid #ddd;
+    padding: 0px 0px 0px 10px;
+    font-size: 16px;
+    outline: none;
+}
+.content .pannel .group input:focus{
+    border: 1px solid #cc865e;
+}
+.content .pannel .login-btn button{
+    background-color: #cc865e;
+    width: 260px;
+}
+.content .pannel .login-btn button:hover{
+    background-color: white;
+    color:#cc865e;
+    border: 1px solid #cc865e;
+}
+.content .reg button{
+    background-color: #466baf;
+    width: 150px;
+}
+.content .reg button:hover{
+    background-color: white;
+    color: #466baf;
+}
+.content .reg{
+    text-align: center;
+    margin-top: 20px;
+}
+.content button{
+    height: 30px;
+    color: white;
+    font-size: 17px;
+    border: 0px;
+    padding: 0px;
+    outline: none;
+}

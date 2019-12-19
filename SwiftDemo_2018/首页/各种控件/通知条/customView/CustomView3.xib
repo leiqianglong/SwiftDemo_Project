@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CustomView3" customModule="SwiftDemo_2018" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Rq-WE-4qw">
+                    <rect key="frame" x="185" y="268.5" width="230" height="130"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="..................................................................." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MQJ-ap-BQI">
+                            <rect key="frame" x="20" y="49.5" width="190" height="34"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="34" id="mGU-6R-QV5"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="注册完成！" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5VV-Fe-S0r">
+                            <rect key="frame" x="69.5" y="20" width="92" height="22"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <color key="textColor" red="0.87560718910000002" green="0.50267378220000003" blue="0.4267123082" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V5f-za-ZRM">
+                            <rect key="frame" x="100" y="92" width="31" height="30"/>
+                            <state key="normal" title="关闭"/>
+                            <connections>
+                                <action selector="btn:" destination="iN0-l3-epB" eventType="touchUpInside" id="tYX-z0-b7x"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="MQJ-ap-BQI" firstAttribute="centerX" secondItem="1Rq-WE-4qw" secondAttribute="centerX" id="4Ny-Xh-RkI"/>
+                        <constraint firstAttribute="width" constant="230" id="KR7-3x-IDX"/>
+                        <constraint firstAttribute="trailing" secondItem="MQJ-ap-BQI" secondAttribute="trailing" constant="20" id="LN2-f0-YhV"/>
+                        <constraint firstItem="5VV-Fe-S0r" firstAttribute="top" secondItem="1Rq-WE-4qw" secondAttribute="top" constant="20" id="LYJ-VS-G5L"/>
+                        <constraint firstItem="MQJ-ap-BQI" firstAttribute="top" secondItem="5VV-Fe-S0r" secondAttribute="bottom" constant="8" id="ShA-52-PT3"/>
+                        <constraint firstItem="V5f-za-ZRM" firstAttribute="centerX" secondItem="1Rq-WE-4qw" secondAttribute="centerX" id="TFK-2O-imN"/>
+                        <constraint firstAttribute="bottom" secondItem="V5f-za-ZRM" secondAttribute="bottom" constant="8" id="cTS-hF-9US"/>
+                        <constraint firstItem="MQJ-ap-BQI" firstAttribute="leading" secondItem="1Rq-WE-4qw" secondAttribute="leading" constant="20" id="ndQ-qA-Q4M"/>
+                        <constraint firstItem="5VV-Fe-S0r" firstAttribute="centerX" secondItem="1Rq-WE-4qw" secondAttribute="centerX" id="tAl-iP-coR"/>
+                        <constraint firstAttribute="height" constant="130" id="zFZ-mZ-HII"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                            <integer key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="layer.borderUIColor">
+                            <color key="value" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.22279379399999999" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="1Rq-WE-4qw" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="WIW-9t-cnp"/>
+                <constraint firstItem="1Rq-WE-4qw" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="ZvL-Um-E64"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+        </view>
+    </objects>
+</document>

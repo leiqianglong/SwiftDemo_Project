@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SizeCtr" customModule="SwiftDemo_2018" customModuleProvider="target">
+            <connections>
+                <outlet property="boundsImg" destination="XUE-aR-RXT" id="eEW-Xr-vkb"/>
+                <outlet property="contentH" destination="cm7-Fo-6qn" id="WWO-wR-V8s"/>
+                <outlet property="contentsW" destination="zuW-kD-zq1" id="kRU-x9-GWb"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="timg" translatesAutoresizingMaskIntoConstraints="NO" id="XUE-aR-RXT">
+                    <rect key="frame" x="147.5" y="70" width="80" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="KWf-X1-sau"/>
+                        <constraint firstAttribute="height" constant="80" id="k1F-Lg-WRk"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon1" translatesAutoresizingMaskIntoConstraints="NO" id="zuW-kD-zq1">
+                    <rect key="frame" x="147.5" y="190" width="80" height="80"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon2" translatesAutoresizingMaskIntoConstraints="NO" id="cm7-Fo-6qn">
+                    <rect key="frame" x="147.5" y="310" width="80" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="h6v-s0-P8U"/>
+                        <constraint firstAttribute="width" constant="80" id="siE-pu-Wis"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="zuW-kD-zq1" firstAttribute="top" secondItem="XUE-aR-RXT" secondAttribute="bottom" constant="40" id="0tS-6Y-ig5"/>
+                <constraint firstItem="cm7-Fo-6qn" firstAttribute="top" secondItem="zuW-kD-zq1" secondAttribute="bottom" constant="40" id="DHq-Pu-Rb4"/>
+                <constraint firstItem="cm7-Fo-6qn" firstAttribute="height" secondItem="XUE-aR-RXT" secondAttribute="height" id="JYy-wE-pwE"/>
+                <constraint firstItem="zuW-kD-zq1" firstAttribute="height" secondItem="XUE-aR-RXT" secondAttribute="height" id="SPm-RR-wZ5"/>
+                <constraint firstItem="XUE-aR-RXT" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="WAE-fy-mBI"/>
+                <constraint firstItem="zuW-kD-zq1" firstAttribute="width" secondItem="XUE-aR-RXT" secondAttribute="width" id="iEl-un-bbj"/>
+                <constraint firstItem="zuW-kD-zq1" firstAttribute="centerX" secondItem="XUE-aR-RXT" secondAttribute="centerX" id="ko5-vh-T1i"/>
+                <constraint firstItem="cm7-Fo-6qn" firstAttribute="width" secondItem="XUE-aR-RXT" secondAttribute="width" id="nre-BD-chv"/>
+                <constraint firstItem="cm7-Fo-6qn" firstAttribute="centerX" secondItem="XUE-aR-RXT" secondAttribute="centerX" id="sfu-uv-AI6"/>
+                <constraint firstItem="XUE-aR-RXT" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="50" id="w9D-0E-Uvv"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon1" width="200" height="200"/>
+        <image name="icon2" width="200" height="200"/>
+        <image name="timg" width="1001" height="987"/>
+    </resources>
+</document>
